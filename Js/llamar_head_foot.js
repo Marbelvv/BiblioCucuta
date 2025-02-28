@@ -1,5 +1,5 @@
 // Cargar el encabezado
-fetch("html/header.html")
+fetch("/html/header.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("header").innerHTML = data;
@@ -60,7 +60,7 @@ fetch("html/header.html")
   });
 
 // Cargar el footer
-fetch("html/footer.html")
+fetch("/html/footer.html")
   .then((response) => response.text())
   .then((data) => {
     // Insertar el contenido del footer en el div con id "footer"
