@@ -1,5 +1,5 @@
 // Cargar el encabezado
-fetch("../html/header.html")
+fetch("./header.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("header").innerHTML = data;
@@ -7,7 +7,7 @@ fetch("../html/header.html")
     // Cargar el estilo del header
     const headerStyle = document.createElement("link");
     headerStyle.rel = "stylesheet";
-    headerStyle.href = "/css/estilo_header.css";
+    headerStyle.href = "../css/estilo_header.css";
     document.head.appendChild(headerStyle);
 
     // Lógica adicional para el comportamiento del header
@@ -60,7 +60,7 @@ fetch("../html/header.html")
   });
 
 // Cargar el footer
-fetch("../html/footer.html")
+fetch("./footer.html")
   .then((response) => response.text())
   .then((data) => {
     // Insertar el contenido del footer en el div con id "footer"
@@ -69,7 +69,7 @@ fetch("../html/footer.html")
     // Cargar el estilo del footer
     const footerStyle = document.createElement("link");
     footerStyle.rel = "stylesheet";
-    footerStyle.href = "/css/estilo_footer.css";
+    footerStyle.href = "../css/estilo_footer.css";
     document.head.appendChild(footerStyle);
 
     // Actualizar el año en el footer
